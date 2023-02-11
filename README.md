@@ -13,3 +13,7 @@ Test: "It should return 'Boop!' when a 2 is inputted."
 Code: beepBoop(2)
 Expected Output: [0, 1, 'Boop!']
 
+Describe: else if(i.toString().includes("1"))
+Test: "It should return 'Beep!' when 1 is inputted"
+Code: beepBoop(1)
+Expected Output: [0, 'Beep!']
