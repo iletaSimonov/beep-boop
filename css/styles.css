@@ -3,5 +3,58 @@
 }
 
 body {
-
+  background-color:  rgb(140,157,173);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+  padding: 20px;
+  letter-spacing: 2px;
 }
+
+h1, h3 {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  color: darkslateblue;
+}
+
+input {
+  background-color: lightgoldenrodyellow;
+  border-radius: 5px;
+  padding: 7px;
+  margin: 0 auto;
+  width: 50%;
+  border-width: 1px;
+  border-color: white;
+  letter-spacing: 2px;
+}
+
+button {
+  padding: 10px;
+  margin: 0 auto;
+  border-style: none;
+  border-radius: 5px;
+  background-color: darkslateblue;
+  color: white;
+  width: 30%;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: rgb(128, 0, 32);
+  color: white;
+}
+
+div {
+  text-align: center;
+  flex: 1 0 auto;
+}
+
+img {
+  width: 60%;
+  height: 60%;
+  border-radius: 7px;
+}
+
