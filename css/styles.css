@@ -16,6 +16,10 @@ h1, h3 {
   text-align: center;
 }
 
+h1 {
+  color: aliceblue;
+}
+
 h3 {
   color: darkslateblue;
 }
@@ -29,6 +33,7 @@ input {
   border-width: 1px;
   border-color: white;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 button {

@@ -3,6 +3,7 @@ window.addEventListener('load', function() {
   const results = document.getElementById('results');
   const submitButton = document.getElementById('submitButton');
   const tryAgain = document.getElementById('tryAgain');
+  let fName = document.getElementById('fName');
 
   submitButton.addEventListener('click', function(event) {
     event.preventDefault();
@@ -13,6 +14,7 @@ window.addEventListener('load', function() {
     submitButton.style.display = "none";
     tryAgain.style.display = "block";
     userInput.value = '';
+     
   });
 
   tryAgain.addEventListener('click', function() {
@@ -23,7 +25,7 @@ window.addEventListener('load', function() {
     let result = [];
     for (let i = 0; i <= number; i++) {
       if (i.toString().includes("3")) {
-        result.push("Wont you be my neighbor?");
+        result.push("Wont you be my neighbor, " + fName.value + "?");
       } else if (i.toString().includes("2")) {
         result.push("Boop!");
       } else if (i.toString().includes("1")) {
