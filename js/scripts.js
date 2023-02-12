@@ -13,8 +13,9 @@ window.addEventListener('load', function() {
     results.innerHTML = beepBoopSentence;
     submitButton.style.display = "none";
     tryAgain.style.display = "block";
+    fName.style.display = "none";
+    userInput.style.display = "none";
     userInput.value = '';
-     
   });
 
   tryAgain.addEventListener('click', function() {
