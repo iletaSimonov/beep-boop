@@ -2,6 +2,7 @@ window.addEventListener('load', function() {
   const userInput = document.getElementById("userInput");
   const results = document.getElementById('results');
   const submitButton = document.getElementById('submitButton');
+  const tryAgain = document.getElementById('tryAgain');
 
   submitButton.addEventListener('click', function(event) {
     event.preventDefault();
@@ -9,7 +10,13 @@ window.addEventListener('load', function() {
 
     const beepBoopSentence = beepBoop(parseInt(userInput.value));
     results.innerHTML = beepBoopSentence;
+    submitButton.style.display = "none";
+    tryAgain.style.display = "block";
     userInput.value = '';
+  });
+
+  tryAgain.addEventListener('click', function() {
+    location.reload();
   });
 
   function beepBoop(number) {
